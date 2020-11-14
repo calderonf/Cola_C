@@ -54,13 +54,13 @@ DATOCOLA cola_get(eCola* c)
     }
     else
     {
-        return ERROR;
+        return ERROR;// esto dependeria de la aplicación reservar un caracter para el error. tambien se puede usar una bandera en la estructura cola
     }
     // si llego hasta acá es por que la cola no estaba 
     // llena y pide meter el dato en la cola
     if (c->salida >=TAM)
         c->salida=0;
-    return BIEN;
+    return temp;
 
     // prender de nuevo las interrupciones
     // sei();//arduinito
